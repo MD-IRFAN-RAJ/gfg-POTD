@@ -2,7 +2,7 @@ class Solution
 {
     public:
     
-    Node* merge(Node *head1, Node* head2){
+    Node* mergelist(Node *head1, Node* head2){
         if (!head1) return head2;  // base cases
     	if (!head2) return head1;  // base cases
     	
@@ -73,7 +73,7 @@ class Solution
          
          reverse(Dhead);
          
-         *head=merge(Ahead, Dhead);
+         *head=mergelist(Ahead, Dhead);
          
          return;
     }
